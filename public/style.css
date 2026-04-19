@@ -1,0 +1,73 @@
+/* Variáveis para facilitar a manutenção */
+:root {
+    --azul-escuro: #0a3d62;
+    --azul-claro: #3c6382;
+    --transicao: all 0.3s ease;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f6;
+    scroll-behavior: smooth;
+}
+
+.bg-dark {
+    background-color: var(--azul-escuro) !important;
+}
+
+/* Banner */
+.banner-img {
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.bg-opacity-50 {
+    backdrop-filter: blur(4px);
+}
+
+/* Cards */
+.card {
+    transition: var(--transicao);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(10, 61, 98, 0.2) !important;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: var(--azul-escuro);
+    border-color: var(--azul-escuro);
+    transition: var(--transicao);
+}
+
+.btn-primary:hover {
+    background-color: var(--azul-claro);
+    border-color: var(--azul-claro);
+    transform: scale(1.02);
+}
+
+/* Animação de Surgimento (Reveal) */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer a:hover {
+    color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+    .banner-img { height: 300px; }
+    .display-5 { font-size: 1.8rem; }
+}
