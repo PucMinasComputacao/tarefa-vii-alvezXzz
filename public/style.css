@@ -1,4 +1,4 @@
-/* Variáveis para facilitar a manutenção */
+
 :root {
     --azul-escuro: #0a3d62;
     --azul-claro: #3c6382;
@@ -15,7 +15,6 @@ body {
     background-color: var(--azul-escuro) !important;
 }
 
-/* Banner */
 .banner-img {
     height: 400px;
     object-fit: cover;
@@ -26,7 +25,6 @@ body {
     backdrop-filter: blur(4px);
 }
 
-/* Cards */
 .card {
     transition: var(--transicao);
     border-radius: 10px;
@@ -38,7 +36,16 @@ body {
     box-shadow: 0 15px 30px rgba(10, 61, 98, 0.2) !important;
 }
 
-/* Botões */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
 .btn-primary {
     background-color: var(--azul-escuro);
     border-color: var(--azul-escuro);
@@ -51,7 +58,6 @@ body {
     transform: scale(1.02);
 }
 
-/* Animação de Surgimento (Reveal) */
 .reveal {
     opacity: 0;
     transform: translateY(40px);
