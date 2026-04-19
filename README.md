@@ -5,12 +5,12 @@ Nessa atividade, vamos dar os primeiros passos com JavaScript, praticando com a 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
+- Nome: Gabriel Oliveira Alves
+- Matricula: 916808
 
 ## Print do console do navegador
 
-<<  COLOQUE A IMAGEM AQUI >>
+<img width="426" height="859" alt="image" src="https://github.com/user-attachments/assets/acdce293-0b9f-4798-8239-706f22fdfeee" />
 
 
 
