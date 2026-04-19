@@ -1,12 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <meta name="description" content="Explore destinos turísticos incríveis pelo Brasil com o Meeting Brasil.">
+    <title>Meeting Brasil | Turismo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Meeting Brasil</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cidades">Cidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Banner -->
+    <section class="container-fluid p-0 mb-5">
+        <div class="position-relative text-center text-white">
+            <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=1200&auto=format&fit=crop"
+                 class="img-fluid w-100 banner-img"
+                 alt="Paisagem turística do Brasil">
+
+            <div class="position-absolute top-50 start-50 translate-middle w-100 bg-dark bg-opacity-50 py-3">
+                <h1 class="display-5 fw-bold">Descubra lugares incríveis</h1>
+                <p class="lead mb-0">Explore as melhores cidades turísticas do Brasil</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="container mb-5 text-center reveal">
+        <h2 class="mb-3">Sobre o Meeting Brasil</h2>
+        <p class="lead">
+            O Meeting Brasil é um portal dedicado a apresentar os melhores destinos turísticos do país,
+            destacando cultura, gastronomia e experiências únicas para viajantes.
+        </p>
+    </section>
+
+    <!-- Cidades -->
+    <section id="cidades" class="container mb-5">
+        <div class="row g-4">
+
+            <!-- Rio -->
+            <div class="col-md-4">
+                <article class="card h-100 shadow-sm border-0 reveal">
+                    <img src="https://images.pexels.com/photos/31719401/pexels-photo-31719401.jpeg"
+                         class="card-img-top"
+                         alt="Rio de Janeiro - Cristo Redentor">
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Rio de Janeiro</h3>
+                        <p class="card-text">Praias, Cristo Redentor e paisagens inesquecíveis.</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Salvador -->
+            <div class="col-md-4">
+                <article class="card h-100 shadow-sm border-0 reveal">
+                    <img src="https://images.pexels.com/photos/16842372/pexels-photo-16842372.jpeg"
+                         class="card-img-top"
+                         alt="Salvador - Pelourinho">
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Salvador</h3>
+                        <p class="card-text">Cultura vibrante, música e culinária marcante.</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Gramado -->
+            <div class="col-md-4">
+                <article class="card h-100 shadow-sm border-0 reveal">
+                    <img src="https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?q=80&w=600&auto=format&fit=crop"
+                         class="card-img-top"
+                         alt="Gramado - arquitetura europeia">
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Gramado</h3>
+                        <p class="card-text">Clima europeu e experiências gastronômicas únicas.</p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container py-5 bg-light rounded shadow-sm mb-5 reveal">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h2 class="mb-4">Receba novidades</h2>
+
+                <form id="newsForm" class="row g-3">
+                    <div class="col-12 text-start">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" id="nome" class="form-control" placeholder="Seu nome" required>
+                    </div>
+
+                    <div class="col-12 text-start">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Seu email" required>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary w-100">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-dark text-white text-center py-4 mt-auto">
+    <div class="container">
+        <p class="mb-1">© 2026 - Meeting Brasil</p>
+        <nav>
+            <a href="#" class="text-white-50 text-decoration-none mx-2">Instagram</a>
+            <a href="#" class="text-white-50 text-decoration-none mx-2">Facebook</a>
+            <a href="#" class="text-white-50 text-decoration-none mx-2">Contato</a>
+        </nav>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
